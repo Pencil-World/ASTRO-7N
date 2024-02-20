@@ -5,16 +5,21 @@ I made this script, because I found the dialogue to be really boring and I wante
 The purpose of this script is to spam through the dialogue and questions given throughout the dialogue by the narrator. 
 It spams the dialogue while at the same time pausing when encountering a copper quiz so you don't lose points. 
 
+-
 
 INSTALLATION
 
 You can either activate the virtual environment I have uploaded to the github repository, or install the modules yourself. 
 Remember to keep your version of pip and python up to date when installing. 
 Here are the commands to install the modules:
+
 pip install pillow
+
 pip install keyboard
+
 pip install pyautogui
 
+-
 
 EXECUTION
 
