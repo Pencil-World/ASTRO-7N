@@ -5,7 +5,11 @@ The purpose of this script is to spam through the dialogue and questions given t
 It spams the dialogue while at the same time pausing when encountering a copper quiz so you don't lose points. 
 
 ## INSTALLATION
-You can either activate the virtual environment I have uploaded to the github repository, or install the modules yourself. 
+Make sure to download the files you want from this branch before proceeding to the rest of the guide. 
+Download or copy/paste the code from the [ASTRO_7N.py](ASTRO_7N.py) file. 
+You can either create a virtual environment or install the modules directly onto your computer. 
+If you install the modules directly, it will go to your main python thingy. 
+If you create a virtual environment, make sure to activate it. 
 Here are the commands to install the modules:
 ```
 pip install pillow
@@ -16,7 +20,7 @@ pip install pyautogui
 >Remember to keep your version of pip and python up to date when installing. 
 
 ## EXECUTION
-Double click the [ASTRO_7N.py](docs/ASTRO_7N.py) file. 
+Double click the [ASTRO_7N.py](ASTRO_7N.py) file. 
 If you prefer to run python files in an IDE or some text editor, feel free to do so as well. 
 Press `ESC` and `[backtick]` together to stop the program.
 The buttons should be directly next to each other vertically on your keyboard. 
