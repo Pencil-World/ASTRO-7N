@@ -3,6 +3,8 @@ Hello everyone! Welcome to my super duper small ASTRO 7N script I made.
 I made this script, because I found the dialogue to be really boring and I wanted a faster way to speed through it. 
 The purpose of this script is to spam through the dialogue and questions given throughout the dialogue by the narrator. 
 It spams the dialogue while at the same time pausing when encountering a copper quiz so you don't lose points. 
+The main file is [ASTRO_7N.py](ASTRO_7N.py). 
+But an alternate, slower version is [ASTRO_7N_slow.py](ASTRO_7N_slow.py). 
 
 ## INSTALLATION
 Make sure to download the files you want from this branch before proceeding to the rest of the guide. 
@@ -35,3 +37,5 @@ Press `ESC` and `[backtick]` together to stop the program.
 The buttons should be directly next to each other vertically on your keyboard. 
 After stopping, the program needs to be started again manually. 
 In order to use the script and start spamming, press `SHIFT` and `CTRL`.
+
+## ASTRO_7N_slow.py
