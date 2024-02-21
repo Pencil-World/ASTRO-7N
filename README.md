@@ -39,3 +39,4 @@ After stopping, the program needs to be started again manually.
 In order to use the script and start spamming, press `SHIFT` and `CTRL`.
 
 ## ASTRO_7N_slow.py
+All instructions are the same except execution. Replace `ASTRO_7N.py` in the commands with `ASTRO_7N_slow.py`. For execution, press `RIGHT SHIFT` and `TAB` together to stop the program. To use the script, press `RIGHT SHIFT`. 
