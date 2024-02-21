@@ -4,7 +4,7 @@ I made this script, because I found the dialogue to be really boring and I wante
 The purpose of this script is to spam through the dialogue and questions given throughout the dialogue by the narrator. 
 It spams the dialogue while at the same time pausing when encountering a copper quiz so you don't lose points. 
 The main file is [ASTRO_7N.py](ASTRO_7N.py). 
-But an alternate, slower version is [ASTRO_7N_slow.py](ASTRO_7N_slow.py). 
+But an alternate, slower version is [ASTRO_7N_slow.py](https://github.com/Pencil-World/ASTRO-7N?tab=readme-ov-file#astro_7n_slowpy). 
 
 ## INSTALLATION
 Make sure to download the files you want from this branch before proceeding to the rest of the guide. 
