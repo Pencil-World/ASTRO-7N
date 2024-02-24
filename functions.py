@@ -8,10 +8,22 @@ def setup(index):
     while text not in [str(elem) for elem in range(1, index + 1)]:
         text = input('\n'.join(array[:index]) + '\n')
         if text == '1':
-            print()
+            return
         elif text == '2':
-            print()
+            return set_detection_point()
         elif text == '3':
             print()
         elif text == '4':
             print()
+
+def set_detection_point():
+    import pyautogui as gui
+    mouse_x, mouse_y = gui.position()
+    color = gui.pixel(mouse_x, mouse_y)
+    return mouse_x, mouse_y, color
+
+def ocr():
+    import easyocr
+    from PIL import Image
+    
+    
