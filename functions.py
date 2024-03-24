@@ -75,7 +75,7 @@ def set_dialogue_box():
     subscript("dialogue_box", dialogue_box_coords)
 
 def ocr():
-    from PIL import Image
+    text = blah.readtext('chinese.jpg')
     
 def export_quizlet():
     print()
