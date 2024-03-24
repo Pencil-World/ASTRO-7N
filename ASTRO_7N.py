@@ -20,3 +20,4 @@ while not keyboard.is_pressed('ESC+`') and time.time() - origin < 1800:
         elif level == 1:
             print()
             # take a screenshot here
+            
