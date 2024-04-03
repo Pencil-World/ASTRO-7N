@@ -1,7 +1,53 @@
 {
-    "detection_point": [2150, 955, [157, 159, 129]],
-    "dialogue_box": [2150, 955, 74, 757],
+    "detection_point": [
+        2150,
+        955,
+        [
+            157,
+            159,
+            129
+        ]
+    ],
+    "dialogue_box": [
+        2150,
+        955,
+        74,
+        757
+    ],
     "quizlet": {
-        "example question": "example answer"
+        "what are the differences between open star clusters and globular star clusters": "open clusters are less concentrated, younger, and have fewer stars",
+        "which of the following is false": "a nova is more luminous than a supernova",
+        "what kind of a gas cloud can collapse and form stars?": "the gas cloud must have a mass that exceeds the jeans mass so that gravity overcomes the internal pressure in the cloud",
+        "what is the mass of the black hole at the center of the milky way": "4 million solar masses",
+        "how do you measure the mass of the supermassive black hole at the center of the milky way": "look at the orbits of nearby stars and apply kepler's third law",
+        "in the symbol for the hubble type of a galaxy, sbc, the \"b\" denotes": "the presence of a bar",
+        "what happens to the planets in a galaxy when that galaxy collides with another galaxy?": "nothing, because the spaces between stellar systems in a galaxy is much larger than their size",
+        "which properties of spiral galaxies allow us to subclassify them as sa, sb, or sc?": "size of bulge and extent of spiral arms",
+        "compared to spiral galaxies, elliptical galaxies have...": "less gas, redder colors, and less new star formation",
+        "what is the difference between an e0 and an e7 galaxy?": "the e7 has an oval shape and the e0 is circular.",
+        "you will see that the universe is almost 14,000,000,000 years old. that means that we see the most distant galaxies as they were when the universe was": "1-2 billion years old",
+        "according to models of galaxy formation, which population of stars formed first": "the spheroidal population",
+        "what type of galaxy can result from collisions between galaxies": "elliptical or irregular",
+        "what is a starburst galaxy?": "a galaxy with a very high rate of star formation",
+        "in what part of the spectrum are starburst galaxies brightest?": "infrared",
+        "what parameters do hubble's law relate to each other?": "galaxy recession velocity and distances",
+        "what technique for measuring distance can you use to discover hubble's law": "cepheid variables in galaxies and white dwarfs supernovae in galaxies",
+        "how do you measure the speed of the galaxy relative to you": "doppler shifts",
+        "what is hubbele's law": "the faster a galaxy is moving the farther away it is",
+        "what is the center of the universe": "there is no center to the universe. expansion is happening everywhere.",
+        "how have astronomers interpreted the unexpectedly fast rotation of galaxies?": "there must be a lot of dark matter whose gravity can be felt but not seen",
+        "which of the following is not true about dark matter": "dark matter and dark energy are two aspects of the same phenomenon",
+        "why do we think there is a lot of dark matter in clusters of the galaxies": "individual galaxies are moving so fast that they could not be held together by the gravity of visible matter, and gravitational lensing lets us measure mass even when we can't see it.",
+        "how do we know that the universe's expansion is speeding up": "we look at objects from different times in the past to see how expansion changes with time",
+        "how could the universe be accelerating despite the gravitational pull of all the matter in it": "there could be a new force or property of space that affects the universe on its largest scales.",
+        "which force is responsible for holding nucleus together via gluons": "strong",
+        "how many types of fundamental particles exist": "30",
+        "how many types of quarks are there, and how many types of antiquarks": "6 quarks and 6 antiquarks",
+        "what kind of particle carries the forces": "boson",
+        "which has the events in the right order from early to late": "quark soup, protons form, nucleosynthesis, recombination, star formation",
+        "what happens because of the formation of atoms": "the cosmic microwave background is produced",
+        "what forms in nucleosynthesis": "most of the helium-4 in the universe",
+        "what is a quasar?": "a very luminous source due to a black hole at the center of a galaxy that is quickly growing",
+        "how did conditions different from the present era when the universe was young": "the young universe was hotter more dense and smoother"
     }
 }

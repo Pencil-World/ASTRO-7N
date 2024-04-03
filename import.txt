@@ -1,0 +1,34 @@
+what are the differences between open star clusters and globular star clusters	Open clusters are less concentrated, younger, and have fewer stars
+Which of the following is false	A nova is more luminous than a supernova
+What kind of a gas cloud can collapse and form stars?	The gas cloud must have a mass that exceeds the Jeans mass so that gravity overcomes the internal pressure in the cloud
+What is the mass of the black hole at the center of the Milky Way	4 million solar masses
+how do you measure the mass of the supermassive black hole at the center of the Milky Way	look at the orbits of nearby stars and apply Kepler's third law
+In the symbol for the Hubble type of a galaxy, SBc, the "B" denotes	the presence of a bar
+What happens to the planets in a galaxy when that galaxy collides with another galaxy?	Nothing, because the spaces between stellar systems in a galaxy is much larger than their size
+Which properties of spiral galaxies allow us to subclassify them as Sa, Sb, or Sc?	size of bulge and extent of spiral arms
+Compared to spiral galaxies, elliptical galaxies have...	less gas, redder colors, and less new star formation
+What is the difference between an E0 and an E7 galaxy?	The E7 has an oval shape and the E0 is circular.
+You will see that the universe is almost 14,000,000,000 years old. That means that we see the most distant galaxies as they were when the universe was	1-2 billion years old
+According to models of galaxy formation, which population of stars formed first	the spheroidal population
+What type of galaxy can result from collisions between galaxies	elliptical or irregular
+What is a starburst galaxy?	a galaxy with a very high rate of star formation
+In what part of the spectrum are starburst galaxies brightest?	infrared
+What parameters do Hubble's law relate to each other?	galaxy recession velocity and distances
+what technique for measuring distance can you use to discover Hubble's law	Cepheid variables in galaxies and white dwarfs supernovae in galaxies
+How do you measure the speed of the galaxy relative to you	Doppler shifts
+What is Hubbele's law	The faster a galaxy is moving the farther away it is
+What is the center of the universe	There is no center to the Universe. Expansion is happening everywhere.
+How have astronomers interpreted the unexpectedly fast rotation of galaxies?	There must be a lot of dark matter whose gravity can be felt but not seen
+Which of the following is not true about dark matter	Dark matter and dark energy are two aspects of the same phenomenon
+Why do we think there is a lot of dark matter in clusters of the galaxies	Individual galaxies are moving so fast that they could not be held together by the gravity of visible matter, and gravitational lensing lets us measure mass even when we can't see it.
+How do we know that the universe's expansion is speeding up	We look at objects from different times in the past to see how expansion changes with time
+How could the universe be accelerating despite the gravitational pull of all the matter in it	There could be a new force or property of space that affects the universe on its largest scales.
+Which force is responsible for holding nucleus together via Gluons	strong
+How many types of fundamental particles exist	30
+How many types of quarks are there, And how many types of antiquarks	6 quarks and 6 antiquarks
+What kind of particle carries the forces	boson
+Which has the events in the right order from early to late	quark soup, protons form, nucleosynthesis, recombination, star formation
+What happens because of the formation of atoms	the cosmic microwave background is produced
+What forms in nucleosynthesis	Most of the Helium-4 in the Universe
+What is a quasar?	a very luminous source due to a black hole at the center of a galaxy that is quickly growing
+How did conditions different from the present era when the universe was young	The young universe was hotter more dense and smoother

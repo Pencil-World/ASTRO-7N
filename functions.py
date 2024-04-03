@@ -9,11 +9,13 @@ def setup(index):
 
     if index == 5:
         import easyocr
-        global blah
-        blah = easyocr.Reader(['en'])
+        global ocr
+        ocr = easyocr.Reader(['en'])
 
     while True:
         text = input('\n'.join(array[:index]) + '\n')
+        print()
+
         if text == '1':
             print("Program start")
             with open('settings.json', 'r') as file:
@@ -23,11 +25,15 @@ def setup(index):
             print("Set the application to full screen. ")
             set_detection_point()
         elif text == '3':
-            print()
-            print("successful, quizlet is empty, blah, blah, blah")
+            print("The following instructions will explain how to input a quizlet into the program. ")
+            print("1. Navigate to the desired quizlet. This will be the quizlet url. ")
+            print("2. Login to your quizlet account. You can use your school account for this. ")
+            print("3. Press the copy and edit button. It will look like 2 overlapping rectangles. ")
+            print("4. Click [Create]. The button is on the top right. ")
+            print("5. Click the three horizontal dots and then [Export]. ")
+            print("6. Copy and paste the exported text into the import.txt file. ")
             import_quizlet()
         elif text == '4':
-            # print instructions to upload quizlet
             export_quizlet()
         elif text == '5':
             print("The dialogue box allows the program to read the questions and answers of copper quizes. ")
@@ -35,15 +41,19 @@ def setup(index):
             set_dialogue_box()
         else: 
             print("Invalid input. ")
-        print("Function continues. ")
+        print("Function continues. \n")
 
 # acts like the c++ indexing operator []. gets and sets. 
 def subscript(key, val = None):
-    with open('settings.json', 'r') as file:
+    with open('settings.json', 'r+') as file:
         obj = json.load(file)
         if val == None:
             return obj[key]
         obj[key] = val
+
+        file.truncate(0)
+        file.seek(0)
+        json.dump(obj, file, indent=4)
 
 def set_detection_point():
     import keyboard
@@ -65,20 +75,28 @@ def set_dialogue_box():
     print("Hover over the top left of the dialogue box. ")
     print("Press ENTER. ")
     keyboard.wait("ENTER")
-    dialogue_box_coords[0:2] = gui.position()
+    dialogue_box_coords[:2] = gui.position()
 
     print("Hover over the bottom right of the dialogue box. ")
     print("Press ENTER. ")
     keyboard.wait("ENTER")
-    dialogue_box_coords[2:] = [gui.position() - dialogue_box_coords[0], gui.position() - dialogue_box_coords[1]] # placeholder
+    dialogue_box_coords[2:] = [gui.position()[0] - dialogue_box_coords[0], gui.position()[1] - dialogue_box_coords[1]] # placeholder
 
     subscript("dialogue_box", dialogue_box_coords)
 
-def ocr():
-    text = blah.readtext('chinese.jpg')
+def ocr(file):
+    return ocr.readtext(file)
     
 def export_quizlet():
-    print()
+    import keyboard
+    print("Hover over the top left of the dialogue box. ")
+    print("Press SPACE. ")
+    keyboard.wait("SPACE")
 
 def import_quizlet():
-    print()
+    parsed_quizlet = dict()
+    with open('import.txt', 'r') as file:
+        for line in file:
+            question, answer = line.strip().split('\t')
+            parsed_quizlet[question.lower()] = answer.lower()
+    subscript("quizlet", parsed_quizlet)
