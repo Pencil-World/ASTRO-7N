@@ -9,4 +9,4 @@ i = 0
 while not keyboard.is_pressed('RIGHT SHIFT+TAB') and time.time() - origin < 1800:
     if keyboard.is_pressed('RIGHT SHIFT'):
         gui.press(str(i := i % 5 + 1))
-        gui.press('ENTER')
+    gui.press('ENTER')

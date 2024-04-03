@@ -1,4 +1,6 @@
 import json
+import keyboard
+import pyautogui as gui
 
 def setup(index):
     array = ["Enter 1 to start the program. \n\tThis option assumes the loaded settings from file. \n\tThis is default if never altered. ", 
@@ -11,6 +13,7 @@ def setup(index):
         import easyocr
         global ocr
         ocr = easyocr.Reader(['en'])
+        print('\n\n')
 
     while True:
         text = input('\n'.join(array[:index]) + '\n')
@@ -56,9 +59,6 @@ def subscript(key, val = None):
         json.dump(obj, file, indent=4)
 
 def set_detection_point():
-    import keyboard
-    import pyautogui as gui
-
     print("Hover over a distinguishable part of copper. ")
     print("Press ENTER. ")
     keyboard.wait("ENTER")
@@ -68,8 +68,6 @@ def set_detection_point():
     subscript("detection_point", [mouse_x, mouse_y, color]) # is this correct json format?
 
 def set_dialogue_box():
-    import keyboard
-    import pyautogui as gui
     dialogue_box_coords = [None, None, None, None]
 
     print("Hover over the top left of the dialogue box. ")
@@ -88,15 +86,17 @@ def ocr(file):
     return ocr.readtext(file)
     
 def export_quizlet():
-    import keyboard
     print("Hover over the top left of the dialogue box. ")
     print("Press SPACE. ")
     keyboard.wait("SPACE")
 
 def import_quizlet():
-    parsed_quizlet = dict()
+    import string
+    remove_punctuation = lambda input: input.lower().translate(str.maketrans('', '', string.punctuation))
+    quizlet_parsed = dict()
+    
     with open('import.txt', 'r') as file:
         for line in file:
             question, answer = line.strip().split('\t')
-            parsed_quizlet[question.lower()] = answer.lower()
-    subscript("quizlet", parsed_quizlet)
+            quizlet_parsed[remove_punctuation(question)] = remove_punctuation(answer)
+    subscript("quizlet", quizlet_parsed)
