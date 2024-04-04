@@ -18,6 +18,11 @@ def get_best_match(r, value):
         return 0
     return best_match
 
+print("Once the program starts: ")
+print("Hold SHIFT and CTRL to activate it. ")
+print("Hold ESC and ` to exit. ")
+print()
+
 CopperQuizzes = input("Do you want the program to complete copper quizzes as well as advance the dialogue? [Y/N] ") == 'Y'
 info = setup(3 if CopperQuizzes == False else 5)
 x, y, expectedRGBColor = info["detection_point"]
