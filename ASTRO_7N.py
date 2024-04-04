@@ -6,9 +6,7 @@ import time
 
 # Advanced
 from functions import clean_extracted_text, extract_screen_text
-from functions import ocr
 from difflib import SequenceMatcher
-import string
 
 def get_best_match(r, value):
     similarities = [[SequenceMatcher(None, value, elem).ratio(), elem] for elem in r]

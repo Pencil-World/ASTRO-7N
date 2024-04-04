@@ -1,6 +1,7 @@
 import json
 import keyboard
 import pyautogui as gui
+import string
 
 def setup(index):
     array = ["Enter 1 to start the program. \n\tThis option assumes the loaded settings from file. \n\tThis is default if never altered. ", 
@@ -28,7 +29,7 @@ def setup(index):
             print("Set the application to full screen. ")
             set_detection_point()
         elif text == '3':
-            print("The following instructions will explain how to input a quizlet into the program. ")
+            print("The following instructions will explain how to import a quizlet into the program. ")
             print("1. Navigate to the desired quizlet. This will be the quizlet url. ")
             print("2. Login to your quizlet account. You can use your school account for this. ")
             print("3. Press the copy and edit button. It will look like 2 overlapping rectangles. ")
@@ -37,6 +38,13 @@ def setup(index):
             print("6. Copy and paste the exported text into the import.txt file. ")
             import_quizlet()
         elif text == '4':
+            print("The following instructions will explain how to export a quizlet from the program. ")
+            print("1. Start the copper quiz. ")
+            print("2. Navigate to the question and answer screen")
+            print("3. Press ENTER to record the question and answers. ")
+            print("4. Repeat until the end of the quiz. ")
+            print("5. When the quiz ends, press ESC and ` to exit. ")
+            print("6. The quizlet should have been exported to export.txt file. ")
             export_quizlet()
         elif text == '5':
             print("The dialogue box allows the program to read the questions and answers of copper quizes. ")
@@ -89,7 +97,7 @@ def export_quizlet():
     dialogue_box = subscript("dialogue_box")
     quizlet_parsed = []
 
-    while not keyboard.is_pressed('SHIFT+CTRL'):
+    while not keyboard.is_pressed('ESC+`'):
         keyboard.wait("SPACE")
         extracted_text = extract_screen_text(dialogue_box)
         text_block = clean_extracted_text(extracted_text)
