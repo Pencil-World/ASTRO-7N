@@ -86,9 +86,16 @@ def ocr(file):
     return ocr.readtext(file)
     
 def export_quizlet():
-    print("Hover over the top left of the dialogue box. ")
-    print("Press SPACE. ")
-    keyboard.wait("SPACE")
+    dialogue_box = subscript("dialogue_box")
+    quizlet_parsed = []
+
+    while not keyboard.is_pressed('SHIFT+CTRL'):
+        keyboard.wait("SPACE")
+        extracted_text = extract_screen_text(dialogue_box)
+        text_block = clean_extracted_text(extracted_text)
+        quizlet_parsed.append(text_block[0] + '\t' + ';'.join(text_block[1:]))
+    with open('export.txt', 'w') as file:
+        file.write('\n'.join(quizlet_parsed))
 
 def import_quizlet():
     import string
@@ -100,3 +107,19 @@ def import_quizlet():
             question, answer = line.strip().split('\t')
             quizlet_parsed[remove_punctuation(question)] = remove_punctuation(answer)
     subscript("quizlet", quizlet_parsed)
+
+def extract_screen_text(dialogue_box):
+    filename = 'screenshot.jpg'
+    gui.screenshot(filename, region=dialogue_box)
+    return ocr(filename)
+
+def clean_extracted_text(extracted_text):
+    remove_punctuation = lambda input: input.strip().lower().translate(str.maketrans('', '', string.punctuation))
+    text_block = [""]
+    index = 65
+    for bounding_box in extracted_text:
+        if ord(bounding_box[1][0]) == index and text_block[-1] != "":
+            text_block.append("")
+            index += 1
+        text_block[-1] += remove_punctuation(bounding_box[1]) + " "
+    return text_block
