@@ -3,23 +3,28 @@ Hello everyone! Welcome to my super duper small ASTRO 7N script I made.
 I made this script, because I found the dialogue to be really boring and I wanted a faster way to speed through it. 
 The purpose of this script is to spam through the dialogue and questions given throughout the dialogue by the narrator. 
 It spams the dialogue while at the same time pausing when encountering a copper quiz so you don't lose points. 
-The main file is [ASTRO_7N.py](ASTRO_7N.py). 
-But an alternate, slower version is [ASTRO_7N_light.py](https://github.com/Pencil-World/ASTRO-7N?tab=readme-ov-file#astro_7n_light). 
+The main file is [ASTRO_7N.py](ASTRO_7N.py). This is the full version of the program with all the capabilities I have programmed. 
+But an alternate, slower version is [ASTRO_7N_light.py](https://github.com/Pencil-World/ASTRO-7N/blob/main/ASTRO_7N_light.py). This is a smaller version of the program for weaker computers and can only advance the dialogue. 
 
 ## INSTALLATION
 Make sure to download the files you want from this branch before proceeding to the rest of the guide. 
 Download or copy/paste the code from the [ASTRO_7N.py](ASTRO_7N.py) file. 
 You can either create a virtual environment or install the modules directly. 
 If you create a virtual environment, make sure to activate it. 
-Here are the commands to install the modules:
+>[!Tip]
+>You can install all the necessary modules by running `pip install -r requirements.txt`.
+
+Here are the commands to install the modules for [ASTRO_7N_light.py](https://github.com/Pencil-World/ASTRO-7N/blob/main/ASTRO_7N_light.py):
 ```
 pip install pillow
 pip install keyboard
 pip install pyautogui
 ```
 If your computer has different specifications visit each module's installation guides. [Pillow install](https://pillow.readthedocs.io/en/stable/installation.html). [Keyboard install](https://pypi.org/project/keyboard/). [Pyautogui install](https://pyautogui.readthedocs.io/en/latest/install.html). 
+
+If you want to run [ASTRO_7N.py](ASTRO_7N.py), you must also install easyocr by running `pip install easyocr`.
 >[!Note]
->Remember to keep your version of pip and python up to date when installing. 
+>Remember to keep your version of pip and python up to date when installing.
 
 ## EXECUTION
 There are three main methods to execute the program. 
@@ -32,6 +37,7 @@ Locate the file location of where your [ASTRO_7N.py](ASTRO_7N.py) file is. For *
 ### Opening With
 Locate the file using either Finder for **macOS** or File Explorer for **Windows**. Right click the file and click `Open With` and then `python`. 
 
+## ASTRO_7N.py
 Once starting the program, read the following instructions on how to operate it. 
 Press `ESC` and `[backtick]` together to stop the program.
 The buttons should be directly next to each other vertically on your keyboard. 
@@ -39,4 +45,4 @@ After stopping, the program needs to be started again manually.
 In order to use the script and start spamming, press `SHIFT` and `CTRL`.
 
 ## ASTRO_7N_slow.py
-All instructions are the same except execution. Replace `ASTRO_7N.py` in the commands with `ASTRO_7N_slow.py`. For execution, press `RIGHT SHIFT` and `TAB` together to stop the program. To use the script, press `RIGHT SHIFT`. 
+All instructions are the same except execution. Replace `ASTRO_7N.py` in the commands with `ASTRO_7N_light.py`. For execution, press `RIGHT SHIFT` and `TAB` together to stop the program. To use the script, press `RIGHT SHIFT`. 
